@@ -1,0 +1,133 @@
+.bg--light-gray {
+  background-color: #e6e6e6; }
+
+.paper {
+  width: 59.5rem;
+  min-height: 84.2rem;
+  margin: auto;
+  background-color: #fff; }
+
+.cv {
+  display: table; }
+  .cv__sidebar {
+    padding: 1rem;
+    background-color: #1779ba;
+    width: 30%;
+    display: table-cell;
+    color: #fff; }
+  .cv__main {
+    padding: 10px;
+    width: 65%;
+    display: table-cell; }
+    .cv__main h1 {
+      color: #1779ba;
+      font-size: 1.3rem; }
+    .cv__main h2 {
+      position: relative;
+      font-size: 1.1rem;
+      margin-bottom: 0; }
+      .cv__main h2 small {
+        color: #888d95;
+        font-size: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0.9rem; }
+      .cv__main h2 + h3 {
+        color: #888d95;
+        font-size: 0.9rem; }
+    .cv__main p, .cv__main ul, .cv__main dd {
+      color: #26282b;
+      font-size: 0.8rem;
+      margin-bottom: 0;
+      padding-left: 10px;
+      text-align: justify; }
+    .cv__main .tags {
+      margin-left: 10px; }
+      .cv__main .tags span {
+        border-radius: 3px;
+        font-size: 0.7rem; }
+  .cv__title {
+    font-size: 1.4rem !important; }
+
+.sidebar__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem !important; }
+.sidebar__name {
+  text-align: center;
+  font-weight: 600; }
+.sidebar__job {
+  color: #e6e6e6;
+  text-align: center;
+  font-weight: 600; }
+.sidebar__img {
+  width: 50%;
+  display: block;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto; }
+.sidebar__info dd {
+  font-size: 0.8rem;
+  clear: both; }
+  .sidebar__info dd i {
+    margin-right: 20px; }
+  .sidebar__info dd a {
+    color: #fff; }
+    .sidebar__info dd a:hover {
+      text-decoration: underline; }
+
+.main__title {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.cv__main .cv__info {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-top: 5px; }
+
+.cv__info {
+  padding: 5px;
+  border-radius: 5px; }
+  .cv__info:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.tabs li a {
+  font-size: 1.1rem; }
+
+label {
+  font-weight: 600; }
+
+.tags .label {
+  margin-right: 5px; }
+
+.text-danger {
+  color: #cc4b37; }
+
+.btn-block {
+  display: inline-block;
+  opacity: 0; }
+  .cv__sidebar .btn-block {
+    float: right; }
+  #cv__skills .btn-block {
+    float: none; }
+
+.icon {
+  margin: 0 !important;
+  margin-right: 5px !important;
+  padding: 0 !important; }
+  .icon:first-child {
+    color: #37cc56; }
+  .icon:nth-child(2) {
+    color: #cc4b37; }
+  .icon i {
+    line-height: 1;
+    border-radius: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 !important;
+    font-size: 1rem; }
+    .icon i:hover {
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=main.css.map */

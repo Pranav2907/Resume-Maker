@@ -1,0 +1,268 @@
+// ----------------------------------------------------
+// Size
+// ----------------------------------------------------
+
+$title-size: 1.4rem !important;
+$title-sidebar-size: 1rem !important;
+$paper-width: 59.5rem;
+$paper-height: 84.2rem;
+$text-size: .8rem;
+$time-size: .9rem;
+$title-1-size: 1.3rem;
+$title-2-size: 1.1rem;
+
+// ----------------------------------------------------
+// Colors
+// ----------------------------------------------------
+
+$bg-color: #e6e6e6;
+$sidebar-bg-color: #1779ba;
+$paper-bg-color: #fff;
+$paper-title-color: $sidebar-bg-color;
+$text-color: #26282b;
+$time-color: lighten($text-color, 40);
+$danger-color: #cc4b37;;
+$success-color: #37cc56;;
+
+// ----------------------------------------------------
+// Padding
+// ----------------------------------------------------
+
+$default-padding: 10px;
+$sidebar-padding: 1rem;
+
+// ----------------------------------------------------
+// Margins
+// ----------------------------------------------------
+
+$default-margin: 5px;
+$paper-title-margin-top: .5rem;
+
+// ----------------------------------------------------
+// Backgrounds
+// ----------------------------------------------------
+
+.bg--light-gray {
+  background-color: $bg-color;
+}
+
+// ----------------------------------------------------
+// paper
+// ----------------------------------------------------
+
+.paper {
+  width: $paper-width;
+  min-height: $paper-height;
+  margin: auto;
+  background-color: $paper-bg-color;
+}
+
+.cv {
+  display: table;
+
+  &__sidebar {
+    padding: $sidebar-padding;
+    background-color: $sidebar-bg-color;
+    width: 30%;
+    display: table-cell;
+    color: $paper-bg-color;
+  }
+
+  &__main {
+    padding: $default-padding;
+    width: 65%;
+    display: table-cell;
+
+    h1 {
+      color: $paper-title-color;
+      font-size: $title-1-size;
+    }
+
+    h2 {
+      position: relative;
+      font-size: $title-2-size;
+      margin-bottom: 0;
+
+      small {
+        color: $time-color;
+        font-size: ($text-size + .2rem);
+        position: absolute;
+        right: 0;
+        top: 0.9rem;
+      }
+
+      + h3 {
+        color: $time-color;
+        font-size: $time-size;
+      }
+    }
+
+    p, ul, dd {
+      color: $text-color;
+      font-size: $text-size;
+      margin-bottom: 0;
+      padding-left: 10px;
+      text-align: justify;
+    }
+
+    .tags {
+      margin-left: $default-margin * 2;
+
+      span {
+        border-radius: 3px;
+        font-size: $text-size - .1rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: $title-size;
+  }
+}
+
+.sidebar {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $title-sidebar-size;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__job {
+    color: $bg-color;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: 50%;
+    display: block;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__info {
+    dd {
+      font-size: $text-size;
+      clear: both;
+
+      i {
+        margin-right: $default-padding * 2;
+      }
+
+      a {
+        color: $paper-bg-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  &__title {
+    margin-top: $paper-title-margin-top;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.cv__main {
+  .cv__info{
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-top: $default-margin;
+  }
+}
+
+.cv__info{
+  padding: $default-margin;
+  border-radius: $default-margin;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+// ----------------------------------------------------
+// Form
+// ----------------------------------------------------
+
+.tabs {
+  li {
+    a {
+      font-size: $title-2-size;
+    }
+  }
+}
+
+label {
+  font-weight: 600;
+}
+
+// ----------------------------------------------------
+// Tags
+// ----------------------------------------------------
+
+.tags {
+  .label {
+    margin-right: $default-margin;
+  }
+}
+
+// ----------------------------------------------------
+// Text
+// ----------------------------------------------------
+
+.text-danger {
+  color: $danger-color;
+}
+
+// ----------------------------------------------------
+// Buttons
+// ----------------------------------------------------
+.btn-block {
+  display: inline-block;
+  opacity: 0;
+
+  .cv__sidebar & {
+    float: right;
+  }
+
+  #cv__skills & {
+    float: none;
+  }
+}
+
+.icon {
+  margin: 0 !important;
+  margin-right: 5px !important;
+  padding: 0 !important;
+
+  &:first-child {
+    color: $success-color;
+  }
+
+  &:nth-child(2) {
+    color: $danger-color;
+  }
+
+  i {
+    line-height: 1;
+    border-radius: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 !important;
+    font-size: 1rem;
+    &:hover{
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, 0.2);
+    }
+
+
+  }
+}
